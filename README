@@ -24,3 +24,6 @@ USAGE:
 	$.Protokol.register('przd' ,'submit', function customSubmitHandler(stopedEvt){
 		var clicked = $(stopedEvt.originalTarget);
 	});
+
+	// Stop listening for this protocol (removes all handlers bound by "register" )
+	$.Protokol.unregister('przd' ,'submit');
