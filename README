@@ -21,6 +21,6 @@ USAGE:
 	// Every form submit whose action starts with 'przd://' will be trapped
 	// and re-bound to custom handler (can have multiple handlers)
 
-	$.Protokol.register('przd' ,'click', function customSubmitHandler(stopedEvt){
+	$.Protokol.register('przd' ,'submit', function customSubmitHandler(stopedEvt){
 		var clicked = $(stopedEvt.originalTarget);
 	});
