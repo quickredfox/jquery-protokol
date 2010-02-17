@@ -4,7 +4,7 @@ file: jquery-protokol.js
 Copyright 2010 Francois Lafortune "quickredfox"
 MIT Licensed;
 
-A small jQuery extension for trapping/handling custom protocols
+A small jQuery extension for trapping/handling custom protocol schemes
 
 USAGE:
 
