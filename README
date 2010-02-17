@@ -1,0 +1,12 @@
+$.Protokol
+
+file: jquery-protokol.js
+Copyright 2010 Francois Lafortune "quickredfox"
+MIT Licensed;
+
+A small jQuery extension for trapping/handling custom protocols
+
+requires firebug and fireunit to run the index.html otherwise peek at index.html & tests.js
+
+
+
