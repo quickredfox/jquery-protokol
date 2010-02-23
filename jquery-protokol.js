@@ -20,7 +20,8 @@
 				// Tainted handler
 	            var proxy = function(evt, data) {
 	                evt.preventDefault();
-	                handler(evt)
+					var $el = $(evt.originalTarget);
+	                handler(evt,(type == 'click' ? $el.attr('href') : $el.attr('action') ));
 	            };
 				// Storage for tainted handler
 	            if (!Protokol.proxies[scheme]) Protokol.proxies[scheme] = [];

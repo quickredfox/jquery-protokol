@@ -27,3 +27,8 @@ USAGE:
 
 	// Stop listening for this protocol (removes all handlers bound by "register" )
 	$.Protokol.unregister('przd' ,'submit');
+	
+	
+TODO: 
+
+	- add support for resource fetching/linking via custom schemes
