@@ -11,8 +11,10 @@ USAGE:
 	// Every clicked anchors whose href  starts with 'przd://' will be trapped
 	// and re-bound to custom handler (can have multiple handlers)
 	
-	$.Protokol.register('przd' ,'click', function customClickHandler(stopedEvt){
-		var clicked = $(stopedEvt.originalTarget);
+	$.Protokol.register('przd' ,'click', function customClickHandler(data){
+		var element = data.element;
+		var event = data.event;
+		var protocol = data.protocol;
 	});
 	
 	// Stop listening for this protocol (removes all handlers bound by "register" )
@@ -21,8 +23,10 @@ USAGE:
 	// Every form submit whose action starts with 'przd://' will be trapped
 	// and re-bound to custom handler (can have multiple handlers)
 
-	$.Protokol.register('przd' ,'submit', function customSubmitHandler(stopedEvt){
-		var clicked = $(stopedEvt.originalTarget);
+	$.Protokol.register('przd' ,'submit', function customSubmitHandler(data){
+		var element = data.element;
+		var event = data.event;
+		var protocol = data.protocol;
 	});
 
 	// Stop listening for this protocol (removes all handlers bound by "register" )
